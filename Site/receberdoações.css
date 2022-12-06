@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 80px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #113D80;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0, 3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #f88f06;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+img.tamanho {
+    width: 80px;
+    height: 80px;
+    margin-top: 4px;
+    margin-left: -50px;
+}
+
+h1 {
+text-align: center;
+margin-top: 1%;
+}
+
+p {
+    margin-top: 1%;
+    margin-left: 13%;
+    margin-right: 13%;
+text-align: center;
+font-size: 128%;
+font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+text-align: center;
+margin-top: 2%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #113D80;
+    min-height: 100px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50%;
+    margin-bottom: 0;
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translate(-10px);
+} 
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave\ -\ Editado.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 6s linear infinite;
+}
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 6s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_03 5s linear infinite;
+}
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_04 5s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+form {
+    width: 100%;
+    max-width: 30rem;
+}
+
+label, input, textarea, button {
+    display: block;
+}
+
+input, textarea, button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    color: #fff;
+    background: #113D80;
+    border: 0.125rem solid;
+    transition: border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.3125rem #113D80;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+textarea {
+    min-height: 12.5rem;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    border-radius: 99px;
+    color: white;
+    background: #f88f06;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, button:focus {
+    outline: none;
+    background: #113D80;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+}
+
+.success,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.error {
+    color: tomato;
+}
